@@ -1,8 +1,6 @@
 README
 ======
-
-TEMPLATE README
-THP Marseille - Fichier de rendu pour le 2019/01/17
+LE JEU DU MORPION - The Hacking Project -  Fichier de rendu pour le 2019/01/24
 
 Comment exécuter le programme
 ============
