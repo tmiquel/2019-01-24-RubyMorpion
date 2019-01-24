@@ -1,11 +1,10 @@
 #! usr/bin/env ruby
+# frozen_string_literal: true
+
 require 'bundler'
 Bundler.require
 
-$:.unshift File.expand_path("./../lib", __FILE__)
-require 'scrapper'
+$LOAD_PATH.unshift File.expand_path('lib', __dir__)
+require 'router'
 
-require 'app/fichier_1'
-require 'views/fichier_2'
-
-MyClass.new.perform
+Router.perform
