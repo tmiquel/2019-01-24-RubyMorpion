@@ -7,9 +7,17 @@ require_relative 'player'
 require_relative 'game_turn'
 require_relative 'router'
 
-# Le controller, dans une vision MVC de l'architecture du jeu
-
 class Game
+  # Game class : controler dans une vision MVC
+  # est appelé par Router
+  # initialise  les classes de type Model, à savoir
+  # => Board (1 seuie instance)
+  # => Player (2 instances)
+  # => GameTurn (autant d'instances que de tour de jeu)
+  # initialise View qui est le front-end du jeu
+  # lance sa méthode #play
+  # Play génère à chaque tour une instance GameTurn
+
   attr_accessor :board, :view
   attr_reader :first_player, :second_player
 
