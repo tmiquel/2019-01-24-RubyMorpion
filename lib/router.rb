@@ -9,7 +9,7 @@ class Router
   def self.perform
     system('clear')
     intro_view
-    loop do
+    while true
       player_1_name = Router.ask_name(first = true)
       player_2_name = Router.ask_name(first = false)
       break unless player_1_name.strip == player_2_name.strip
@@ -45,7 +45,7 @@ class Router
   def self.select_first_player(player_1_name, player_2_name)
     puts "Commençons ! #{player_1_name}, #{player_2_name} : tirons aux dés qui jouera en premier!"
     sleep(1)
-    loop do
+    while true
       dice_roll_1 = Router.dice_roll(0.2, player_1_name)
       dice_roll_2 = Router.dice_roll(0.2, player_2_name)
       puts
